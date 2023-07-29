@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <main className='flex flex-col items-center'>
       {/* landing */}
-      <section className='h-[90vh] relative text-white overflow-hidden w-full'>
+      <section className='h-[850px] relative text-white overflow-hidden w-full'>
         <img
           src='./landing-image.jpg'
           className='absolute top-0 left-0 w-full h-full -z-10 brightness-50'
