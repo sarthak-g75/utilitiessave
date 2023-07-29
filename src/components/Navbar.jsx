@@ -35,7 +35,7 @@ const Navbar = ({ home }) => {
         <div className='flex items-center gap-4 font-medium capitalize'>
           {links.map((link, index) => (
             <Link
-              className={`${
+              className={`hidden lg:block ${
                 location.pathname === link.to
                   ? 'text-primaryGreen'
                   : 'text-white'
