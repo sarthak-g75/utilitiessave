@@ -36,7 +36,7 @@ const Home = () => {
         </div>
       </section>
       {/* two boxes */}
-      <section className="flex gap-4 max-w-[1080px] -mt-16">
+      <section className="flex gap-4 max-w-[1440px] -mt-16">
         <div className="bg-primaryGreen shadow-xl rounded-xl p-8 flex flex-col items-center text-center gap-2 min-w-[300px] justify-center">
           <span className="text-3xl font-bold text-white">€OO'S</span>
           <span className="text-xl font-medium">
@@ -87,7 +87,7 @@ const Home = () => {
       {/* 3 cards */}
       <section className="flex flex-col items-center w-full gap-16 p-4 py-20 mt-20 text-white bg-tealGreen">
         <div className="text-4xl font-bold">Get In Touch</div>
-        <div className="flex flex-col md:flex-row gap-6 text-tealGreen">
+        <div className="flex flex-col gap-6 md:flex-row text-tealGreen">
           <div className="flex flex-col items-center justify-center gap-6 p-8 bg-white rounded-md">
             <span className="p-8 text-4xl rounded-full bg-tealGreen text-primaryGreen">
               <FiPhoneCall />
