@@ -17,7 +17,7 @@ const Home = () => {
         <div className='flex flex-col items-center justify-center w-full h-full gap-4 -mt-16'>
           <div className='flex flex-col items-center font-extrabold text-7xl'>
             <span>Savings is</span>
-            <span>Just One Click Away..</span>
+            <span>Just <span className='text-primaryGreen'>One Click</span> Away..</span>
           </div>
           <div>
             Start Saving Money with Utilities Save, WF will Save up to 40% on
