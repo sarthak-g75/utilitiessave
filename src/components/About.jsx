@@ -9,7 +9,7 @@ function About() {
         <span className='text-lg font-semibold text-primaryGreen'>
           About Us
         </span>
-        <span className='text-3xl font-bold md:text-5xl text-tealGreen'>
+        <span className='text-3xl font-bold md:hidden lg:block md:text-5xl text-tealGreen'>
           Renewable Energy for a Sustainable World
         </span>
         <span className='text-lg'>
