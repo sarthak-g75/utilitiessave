@@ -10,7 +10,7 @@ const Navbar = ({ home }) => {
     { to: '/gas', label: 'Gas' },
     { to: '/water', label: 'Water' },
     { to: '/new-connection', label: 'New Connection' },
-    { to: '/supplier', label: 'Our Supplier' },
+    // { to: '/supplier', label: 'Our Supplier' },
   ]
 
   const location = useLocation()
