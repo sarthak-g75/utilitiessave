@@ -8,13 +8,11 @@ const Footer = () => {
       <div className='flex justify-center px-6 py-12 lg:px-10 lg:py-20 bg-lightGreen text-tealGreen'>
         <div className='max-w-[1440px] w-full flex flex-col lg:flex-row justify-between gap-4 lg:gap-2 '>
           <div className='flex flex-col items-start gap-4 max-w-[400px]'>
-            <div className='flex items-center gap-2 text-3xl font-extrabold'>
-              <img
-                src='./flame.png'
-                className='w-5'
-              />
-              UTILITIES SAVE
-            </div>
+            <img
+              src='./logo.png'
+              alt=''
+              className='w-40 md:w-60'
+            />
             <div className=''>
               Here at utilities save. our aim is to provide you with maximum
               savings and best services for your business utilities. we search

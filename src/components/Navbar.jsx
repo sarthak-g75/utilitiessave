@@ -43,7 +43,7 @@ const Navbar = ({ home }) => {
     <>
       <div
         className={`flex justify-center items-center ${
-          !home && 'bg-tealGreen'
+          !home && 'bg-white border-b-2 border-primaryGreen/10'
         }`}
         ref={ref}
         style={{
@@ -62,10 +62,10 @@ const Navbar = ({ home }) => {
           <div className='items-center gap-4 ml-auto font-medium capitalize md:flex'>
             {links.map((link, index) => (
               <Link
-                className={`hidden lg:block ${
+                className={`hidden lg:block hover:text-primaryGreen ${
                   location.pathname === link.to
                     ? 'text-primaryGreen'
-                    : 'text-white'
+                    : 'text-tealGreen'
                 }`}
                 key={index}
                 to={link.to}
@@ -73,7 +73,7 @@ const Navbar = ({ home }) => {
                 {link.label}
               </Link>
             ))}
-            <Link className='hidden px-6 py-2 ml-auto transition-all rounded-full lg:block bg-primaryGreen hover:text-tealGreen'>
+            <Link className='hidden px-6 py-2 ml-auto text-white transition-all rounded-full lg:block bg-primaryGreen hover:text-tealGreen'>
               Contact Us
             </Link>
           </div>

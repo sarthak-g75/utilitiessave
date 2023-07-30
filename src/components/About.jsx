@@ -6,7 +6,7 @@ function About() {
   return (
     <section className='flex flex-col md:flex-row p-4 gap-8 max-w-[1080px]  h-min w-full mt-20 items-center'>
       <div className='flex flex-col items-center justify-center flex-1 gap-4 text-center md:items-start md:text-left'>
-        <span className='text-lg font-semibold text-primaryGreen'>
+        <span className='px-3 py-1.5 text-lg font-semibold rounded-full text-primaryGreen bg-primaryGreen/20'>
           About Us
         </span>
         <span className='text-3xl font-bold md:hidden lg:block md:text-5xl text-tealGreen'>
@@ -18,7 +18,7 @@ function About() {
           service. Unique energy reduction solutions. Join us for cost-effective
           energy management.
         </span>
-        <Link className='flex items-center gap-1'>
+        <Link className='flex items-center gap-1 px-3 py-1.5 rounded-full text-primaryGreen bg-primaryGreen/10'>
           Read More About Us <FiChevronRight />
         </Link>
       </div>

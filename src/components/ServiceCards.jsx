@@ -9,7 +9,7 @@ const ServiceCards = (props) => {
         alt=' '
         className='object-cover brightness-90 w-[350px] h-60'
       />
-      <div className='flex flex-col items-center w-full gap-4 pt-4 pb-8'>
+      <div className='flex flex-col items-center w-full gap-4 pt-4 pb-8 border border-gray-300 rounded-b-xl '>
         <span className='mb-auto text-2xl font-bold text-tealGreen'>
           {props.name}
         </span>

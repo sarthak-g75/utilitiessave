@@ -4,10 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primaryGreen: '#02cb7b',
-        tealGreen: '#033951',
-
-        lightGreen: '#e1f5ec',
+        primaryGreen: '#0080ff',
+        tealGreen: '#002347',
+        lightGreen: '#c3e1ff',
       },
     },
   },
