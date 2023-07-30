@@ -1,21 +1,26 @@
-import "./App.css";
-import { Routes, Route, useLocation } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import Home from "./components/screens/Home";
+import './App.css'
+import { Routes, Route, useLocation } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Header from './components/Header'
+import Home from './components/screens/Home'
+import Footer from './components/Footer'
 
 function App() {
-  const location = useLocation();
-  console.log(location.pathname);
+  const location = useLocation()
+  console.log(location.pathname)
   return (
-    <div className="flex flex-col pb-10">
+    <div className='flex flex-col'>
       <Header />
-      <Navbar home={location.pathname === "/"} />
+      <Navbar home={location.pathname === '/'} />
       <Routes>
-        <Route path="/" Component={Home} />
+        <Route
+          path='/'
+          Component={Home}
+        />
       </Routes>
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

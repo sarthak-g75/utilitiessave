@@ -10,7 +10,7 @@ const WelcomeBoxes = () => {
         </span>
       </div>
       <div className='flex flex-col items-center gap-2 p-8 text-center bg-white shadow-xl md:text-left md:items-start rounded-xl'>
-        <div className='text-3xl font-bold text-tealGreen'>
+        <div className='pb-2 text-3xl font-bold border-b-4 border-tealGreen text-tealGreen'>
           Welcome To Utilities Save
         </div>
         <div>
