@@ -20,8 +20,7 @@ const Navbar = ({ home }) => {
   const [isMobile, setIsMobile] = useState(false)
   const hamburgerMenu = (
     <FiMenu
-      className='text-lg'
-      color='white'
+      className='text-lg text-tealGreen'
       onClick={() => {
         setIsMobile(!isMobile)
       }}
@@ -42,9 +41,7 @@ const Navbar = ({ home }) => {
   return (
     <>
       <div
-        className={`flex justify-center items-center ${
-          !home && 'bg-white border-b-2 border-primaryGreen/10'
-        }`}
+        className={`flex justify-center items-center ${!home && 'bg-white'}`}
         ref={ref}
         style={{
           marginBottom: home && `-${height}px`,

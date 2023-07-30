@@ -4,7 +4,8 @@ import Navbar from './components/Navbar'
 import Header from './components/Header'
 import Home from './components/screens/Home'
 import Footer from './components/Footer'
-import ComponentPage from './components/screens/ComponentPage'
+import Electricity from './components/screens/Electricity'
+import { pages } from './data'
 
 function App() {
   const location = useLocation()
@@ -18,10 +19,18 @@ function App() {
           path='/'
           element={<Home />}
         />
-        <Route
-          path='/electricity'
-          element={<ComponentPage />}
-        />
+        {pages.map((page) => (
+          <Route
+            path={page.route}
+            element={
+              <Electricity
+                data={page.data}
+                title={page.title}
+                banner={page.banner}
+              />
+            }
+          />
+        ))}
       </Routes>
       <Footer />
     </div>
