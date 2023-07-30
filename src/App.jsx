@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Header from './components/Header'
 import Home from './components/screens/Home'
 import Footer from './components/Footer'
+import ComponentPage from './components/screens/ComponentPage'
 
 function App() {
   const location = useLocation()
