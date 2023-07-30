@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className='flex justify-center px-6 py-12 lg:px-10 lg:py-20 bg-primaryGreen text-teal-950'>
       <div className='max-w-[1224px] w-full flex flex-col lg:flex-row justify-between gap-4 lg:gap-2 '>
-        <div className='flex flex-col items-start gap-4 w-max max-w-[100%]'>
+        <div className='flex flex-col items-start gap-4 max-w-[400px]'>
           <img src='./logo.png' />
           <div className=''>
             Here at utilities save. our aim is to provide you with maximum
