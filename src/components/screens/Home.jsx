@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { FiChevronRight, FiClock, FiPhoneCall } from 'react-icons/fi'
 import { FaVoicemail } from 'react-icons/fa'
 import About from '../About'
+import InifiniteScroll from '../InifiniteScroll'
 
 const Home = () => {
   return (
@@ -126,6 +127,7 @@ const Home = () => {
           </Link>
         </div>
       </section>
+      <InifiniteScroll />
     </main>
   )
 }
