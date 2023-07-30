@@ -3,13 +3,13 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Header from './components/Header'
 import Home from './components/screens/Home'
-import ComponentPage from './components/screens/ComponentPage'
+import Footer from './components/Footer'
 
 function App() {
   const location = useLocation()
   console.log(location.pathname)
   return (
-    <div className='flex flex-col pb-10'>
+    <div className='flex flex-col'>
       <Header />
       <Navbar home={location.pathname === '/'} />
       <Routes>
@@ -22,6 +22,7 @@ function App() {
           element={<ComponentPage />}
         />
       </Routes>
+      <Footer />
     </div>
   )
 }

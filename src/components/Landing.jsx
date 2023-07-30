@@ -2,16 +2,17 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 const Landing = () => {
   return (
-    <section className='h-[750px] md:h-[850px] relative text-white overflow-hidden w-full'>
+    <section className='h-[650px] md:h-[850px] relative text-white overflow-hidden w-full'>
       <img
         src='./landing-image.jpg'
-        className='absolute top-0 left-0 object-cover w-full h-full -z-10 brightness-50'
+        className='absolute top-0 left-0 object-cover object-left-bottom w-full h-full -z-10 brightness-50'
       />
       <div className='flex flex-col items-start justify-center w-full h-full gap-2 p-4 -mt-16 md:gap-4 md:items-center'>
-        <div className='flex flex-col items-start text-3xl font-extrabold md:items-center md:text-7xl'>
+        <div className='flex flex-col items-start text-3xl font-extrabold text-center md:items-center md:text-7xl'>
           <span>Savings is</span>
           <span>
-            Just <span className='text-primaryGreen'>One Click</span> Away..
+            Just <span className='border-b-2 lg:border-b-4'>One Click</span>{' '}
+            Away..
           </span>
         </div>
         <div>

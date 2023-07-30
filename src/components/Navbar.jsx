@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { FiPlus, FiMenu } from 'react-icons/fi'
+import { AnimatePresence, motion } from 'framer-motion'
 const Navbar = ({ home }) => {
   const links = [
     { to: '/', label: 'Home' },
@@ -50,9 +51,14 @@ const Navbar = ({ home }) => {
         }}
       >
         <div className='flex flex-row gap-4 p-4 justify-between items-center  w-full z-10 max-w-[1440px]'>
-          <div className='text-xl font-bold text-primaryGreen'>
+          {/* <div className='text-xl font-bold text-primaryGreen'>
             UTILITIES SAVE
-          </div>
+          </div> */}
+          <img
+            src='./logo.png'
+            alt=''
+            className='w-40 md:w-60'
+          />
           <div className='items-center gap-4 ml-auto font-medium capitalize md:flex'>
             {links.map((link, index) => (
               <Link
@@ -75,39 +81,46 @@ const Navbar = ({ home }) => {
           {/* <div className=' w-fit md:hidden'>{cancelBtn}</div> */}
         </div>
       </div>
-      {isMobile && (
-        <div className='flex flex-row'>
-          <div className='fixed top-0 right-0 z-10 flex flex-col items-center justify-center w-full h-full p-2 bg-white/30 backdrop-blur-xl '>
-            <button className='absolute top-5 right-5'> {cancelBtn}</button>
-            {links.map((link, index) => (
+      <AnimatePresence>
+        {isMobile && (
+          <div className='flex flex-row'>
+            <motion.div
+              initial={{ opacity: 0, backdropFilter: 'blur(0)' }}
+              animate={{ opacity: 1, backdropFilter: 'blur(24px)' }}
+              exit={{ opacity: 0, backdropFilter: 'blur(0)' }}
+              className='fixed top-0 right-0 z-10 flex flex-col items-center justify-center w-full h-full p-2 bg-white/30 backdrop-blur-xl '
+            >
+              <button className='absolute top-5 right-5'> {cancelBtn}</button>
+              {links.map((link, index) => (
+                <Link
+                  onClick={() => {
+                    setIsMobile(!isMobile)
+                  }}
+                  className={`lg:block font-medium text-xl ${
+                    location.pathname === link.to
+                      ? 'text-primaryGreen'
+                      : 'text-tealGreen'
+                  }`}
+                  key={index}
+                  to={link.to}
+                >
+                  {link.label}
+                </Link>
+              ))}
               <Link
-                onClick={() => {
-                  setIsMobile(!isMobile)
-                }}
                 className={`lg:block font-medium text-xl ${
-                  location.pathname === link.to
+                  location.pathname === '/ContactUs'
                     ? 'text-primaryGreen'
                     : 'text-tealGreen'
                 }`}
-                key={index}
-                to={link.to}
               >
-                {link.label}
+                {' '}
+                Contact Us
               </Link>
-            ))}
-            <Link
-              className={`lg:block font-medium text-xl ${
-                location.pathname === '/ContactUs'
-                  ? 'text-primaryGreen'
-                  : 'text-tealGreen'
-              }`}
-            >
-              {' '}
-              Contact Us
-            </Link>
+            </motion.div>
           </div>
-        </div>
-      )}
+        )}
+      </AnimatePresence>
     </>
   )
 }

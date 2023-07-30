@@ -4,7 +4,7 @@ import ServiceCards from './ServiceCards'
 const ServicesCards = () => {
   return (
     <section className='flex flex-col items-center w-full py-10 mt-20 text-white'>
-      <div className='flex justify-center w-full pt-20 pb-40 bg-tealGreen'>
+      <div className='flex justify-center w-full px-4 pt-10 pb-32 text-center md:pt-20 md:pb-40 bg-tealGreen'>
         <div className='text-4xl font-bold'>Services Provides By Us</div>
       </div>
       <div className='flex flex-col justify-center gap-6 -mt-20 md:flex-row md:flex-wrap text-tealGreen'>
