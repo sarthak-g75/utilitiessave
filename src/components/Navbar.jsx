@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-
+import { FiPlus, FiMenu } from 'react-icons/fi'
 const Navbar = ({ home }) => {
   const links = [
     { to: '/', label: 'Home' },
@@ -16,6 +16,26 @@ const Navbar = ({ home }) => {
   const ref = useRef()
   const [height, setheight] = useState(0)
 
+  const [isMobile, setIsMobile] = useState(false)
+  const hamburgerMenu = (
+    <FiMenu
+      size='45px'
+      color='white'
+      onClick={() => {
+        setIsMobile(!isMobile)
+      }}
+    />
+  )
+  const cancelBtn = (
+    <FiPlus
+      className='rotate-45'
+      size='45px'
+      color='white'
+      onClick={() => {
+        setIsMobile(!isMobile)
+      }}
+    />
+  )
   useEffect(() => {
     setheight(ref.current.getBoundingClientRect().height)
   }, [])
@@ -28,11 +48,11 @@ const Navbar = ({ home }) => {
         marginBottom: home && `-${height}px`,
       }}
     >
-      <div className='flex gap-2 p-4 justify-between items-center relative w-full z-10 max-w-[1440px]'>
+      <div className='flex flex-row gap-4 p-4 justify-between items-center  w-full z-10 max-w-[1440px]'>
         <div className='text-xl font-bold text-primaryGreen'>
           UTILITIES SAVE
         </div>
-        <div className='flex items-center gap-4 font-medium capitalize'>
+        <div className='items-center gap-4 ml-auto font-medium capitalize md:flex'>
           {links.map((link, index) => (
             <Link
               className={`hidden lg:block ${
@@ -46,10 +66,12 @@ const Navbar = ({ home }) => {
               {link.label}
             </Link>
           ))}
-          <Link className='px-6 py-2 transition-all rounded-full bg-primaryGreen hover:text-tealGreen'>
+          <Link className='px-6 py-2 ml-auto transition-all rounded-full bg-primaryGreen hover:text-tealGreen'>
             Contact Us
           </Link>
         </div>
+        <div className=' w-fit md:hidden'>{hamburgerMenu}</div>
+        <div className=' w-fit md:hidden'>{cancelBtn}</div>
       </div>
     </div>
   )
