@@ -6,7 +6,7 @@ import Home from './components/screens/Home'
 import Footer from './components/Footer'
 import SiblingPage from './components/screens/SiblingPage'
 import { pages } from './data'
-import { AnimatePresence } from 'framer-motion'
+import QuoteForm from './components/QuoteForm'
 
 function App() {
   const location = useLocation()
@@ -15,26 +15,25 @@ function App() {
     <div className='flex flex-col'>
       <Header />
       <Navbar home={location.pathname === '/'} />
-      <AnimatePresence mode='wait'>
-        <Routes>
+      <Routes>
+        <Route
+          path='/'
+          element={<Home />}
+        />
+        {pages.map((page) => (
           <Route
-            path='/'
-            element={<Home />}
+            path={page.route}
+            element={
+              <Electricity
+                data={page.data}
+                title={page.title}
+                banner={page.banner}
+              />
+            }
           />
-          {pages.map((page) => (
-            <Route
-              path={page.route}
-              element={
-                <SiblingPage
-                  data={page.data}
-                  title={page.title}
-                  banner={page.banner}
-                />
-              }
-            />
-          ))}
-        </Routes>
-      </AnimatePresence>
+        ))}
+      </Routes>
+      <QuoteForm />
       <Footer />
     </div>
   )
