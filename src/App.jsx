@@ -24,7 +24,7 @@ function App() {
           <Route
             path={page.route}
             element={
-              <Electricity
+              <SiblingPage
                 data={page.data}
                 title={page.title}
                 banner={page.banner}
