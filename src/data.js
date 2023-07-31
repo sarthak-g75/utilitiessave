@@ -6,7 +6,7 @@ export const pages = [
     data: [
       {
         para: (
-          <p className='flex-[0.5] font-medium text-base lg:text-lg'>
+          <p className='w-full'>
             Since the deregulation in the energy market, many changes have taken
             place with the most significant one is the price increases.
             Electricity costs has increased by over 70% in the past few years
@@ -27,7 +27,7 @@ export const pages = [
       },
       {
         para: (
-          <p className='flex-[0.5] font-medium text-base lg:text-lg'>
+          <p className='w-full'>
             If your contract is due for renewal we will get back to you as soon
             as possible with the best prices. If it is not due for renewal we
             will contact you at the right time for you to avoid expensive out of
@@ -54,7 +54,7 @@ export const pages = [
     data: [
       {
         para: (
-          <p className='flex-[0.5] font-medium text-base lg:text-lg'>
+          <p className='w-full'>
             Utilitiessave hit the energy market in 2016 with one mission: to
             help businesses save as much money as possible on their gas and
             electricity. Here at utilities save, our aim is to provide you with
@@ -83,7 +83,7 @@ export const pages = [
     data: [
       {
         para: (
-          <p className='flex-[0.5] font-medium text-base lg:text-lg'>
+          <p className='w-full'>
             Utilities save will be analyzing the market constantly to review the
             prices and product available in the commercial gas market. We will
             do our best to get you with the most suitable prices for your gas.
@@ -113,7 +113,7 @@ export const pages = [
     data: [
       {
         para: (
-          <p className='flex-[0.5] font-medium text-base lg:text-lg'>
+          <p className='w-full'>
             From April 2017, the laws changed allowing business & charities to
             seek better deals for water. This change has created competition in
             the non-domestic water market with more retail suppliers entering

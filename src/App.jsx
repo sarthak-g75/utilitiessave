@@ -4,8 +4,9 @@ import Navbar from './components/Navbar'
 import Header from './components/Header'
 import Home from './components/screens/Home'
 import Footer from './components/Footer'
-import Electricity from './components/screens/Electricity'
+import SiblingPage from './components/screens/SiblingPage'
 import { pages } from './data'
+import { AnimatePresence } from 'framer-motion'
 
 function App() {
   const location = useLocation()
@@ -14,24 +15,26 @@ function App() {
     <div className='flex flex-col'>
       <Header />
       <Navbar home={location.pathname === '/'} />
-      <Routes>
-        <Route
-          path='/'
-          element={<Home />}
-        />
-        {pages.map((page) => (
+      <AnimatePresence mode='wait'>
+        <Routes>
           <Route
-            path={page.route}
-            element={
-              <Electricity
-                data={page.data}
-                title={page.title}
-                banner={page.banner}
-              />
-            }
+            path='/'
+            element={<Home />}
           />
-        ))}
-      </Routes>
+          {pages.map((page) => (
+            <Route
+              path={page.route}
+              element={
+                <SiblingPage
+                  data={page.data}
+                  title={page.title}
+                  banner={page.banner}
+                />
+              }
+            />
+          ))}
+        </Routes>
+      </AnimatePresence>
       <Footer />
     </div>
   )
