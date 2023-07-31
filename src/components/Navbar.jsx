@@ -21,7 +21,7 @@ const Navbar = ({ home }) => {
   const hamburgerMenu = (
     <FiMenu
       className='text-lg'
-      color='white'
+      color='black'
       onClick={() => {
         setIsMobile(!isMobile)
       }}

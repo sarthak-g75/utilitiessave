@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Home from './components/screens/Home'
 import Footer from './components/Footer'
 import ComponentPage from './components/screens/ComponentPage'
+import QuoteForm from './components/QuoteForm'
 
 function App() {
   const location = useLocation()
@@ -23,6 +24,7 @@ function App() {
           element={<ComponentPage />}
         />
       </Routes>
+      <QuoteForm />
       <Footer />
     </div>
   )
