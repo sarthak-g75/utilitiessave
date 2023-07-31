@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import SiblingPage from './components/screens/SiblingPage'
 import { pages } from './data'
 import QuoteForm from './components/QuoteForm'
+import ContacUs from './components/screens/ContacUs'
 
 function App() {
   const location = useLocation()
@@ -32,8 +33,12 @@ function App() {
             }
           />
         ))}
+        <Route
+          path='/contactUs'
+          element={<ContacUs />}
+        />
       </Routes>
-      <QuoteForm />
+      {location.pathname !== '/contactUs' && <QuoteForm />}
       <Footer />
     </div>
   )

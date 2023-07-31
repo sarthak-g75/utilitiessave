@@ -4,7 +4,8 @@ import About from '../About'
 import WelcomeBoxes from '../WelcomeBoxes'
 import ServicesCards from '../ServicesCards'
 import Landing from '../Landing'
-import InifiniteScroll from '../InifiniteScroll'
+
+import InfiniteCarasoul from '../InfiniteCarasoul'
 
 const Home = () => {
   return (
@@ -18,7 +19,7 @@ const Home = () => {
       {/* 3 cards */}
       <ServicesCards />
       {/* cards */}
-      <InifiniteScroll />
+      <InfiniteCarasoul />
     </main>
   )
 }

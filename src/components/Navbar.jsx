@@ -5,11 +5,11 @@ import { AnimatePresence, motion } from 'framer-motion'
 const Navbar = ({ home }) => {
   const links = [
     { to: '/', label: 'Home' },
-    { to: '/about', label: 'About us' },
     { to: '/electricity', label: 'Electricity' },
     { to: '/gas', label: 'Gas' },
     { to: '/water', label: 'Water' },
     { to: '/new-connection', label: 'New Connection' },
+    { to: '/about', label: 'About us' },
     // { to: '/supplier', label: 'Our Supplier' },
   ]
 
@@ -70,7 +70,10 @@ const Navbar = ({ home }) => {
                 {link.label}
               </Link>
             ))}
-            <Link className='hidden px-6 py-2 ml-auto text-white transition-all rounded-full lg:block bg-primaryGreen hover:text-tealGreen'>
+            <Link
+              to='/contactUs'
+              className='hidden px-6 py-2 ml-auto text-white transition-all rounded-full lg:block bg-primaryGreen hover:text-tealGreen'
+            >
               Contact Us
             </Link>
           </div>
@@ -105,6 +108,7 @@ const Navbar = ({ home }) => {
                 </Link>
               ))}
               <Link
+                to='/contactUs'
                 className={`lg:block font-medium text-xl ${
                   location.pathname === '/ContactUs'
                     ? 'text-primaryGreen'
