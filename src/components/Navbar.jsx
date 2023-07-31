@@ -34,9 +34,6 @@ const Navbar = ({ home }) => {
       }}
     />
   )
-  useEffect(() => {
-    setheight(ref.current.getBoundingClientRect().height)
-  }, [])
 
   return (
     <>

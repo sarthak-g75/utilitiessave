@@ -5,13 +5,9 @@ const SiblingPage = ({ title, data, banner }) => {
   const [animationKey, setAnimationKey] = useState(0)
 
   useEffect(() => {
-    // This function will be called when the component mounts or receives new props.
-    // You can reset the animation states here.
-
-    // By updating the animationKey state, we trigger the component to remount,
-    // effectively resetting all animations.
     setAnimationKey((key) => key + 1)
   }, [banner, title, data])
+
   return (
     <div
       key={animationKey}
@@ -34,10 +30,10 @@ const SiblingPage = ({ title, data, banner }) => {
           className='absolute top-0 left-0 object-cover w-full h-full -z-10 brightness-50'
         />
       </section>
-      <section className='flex flex-col gap-10 max-w-[1080px] py-20'>
+      <section className='flex flex-col gap-10 max-w-[1080px] lg:py-20'>
         {data.map((d, index) => (
           <div
-            className={`flex max-w-[1080px] flex-col-reverse lg:flex-row justify-center gap-10 px-4 items-center ${
+            className={`flex lg:max-w-[1080px] flex-col-reverse lg:flex-row justify-center gap-10 px-4 items-center max-w-[500px] ${
               index % 2 == 0 && 'lg:flex-row-reverse'
             }`}
           >
@@ -53,7 +49,7 @@ const SiblingPage = ({ title, data, banner }) => {
               initial={{ opacity: 0, x: index % 2 == 0 ? 100 : -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.7 * index + 1 }}
-              className='object-cover w-full max-h-72 border rounded-xl flex-[0.5]'
+              className='object-cover w-full max-h-72 border rounded-xl flex-[0.5] '
               src={d.image}
               alt=''
             />

@@ -9,7 +9,7 @@ import InfiniteCarasoul from '../InfiniteCarasoul'
 
 const Home = () => {
   return (
-    <main className='flex flex-col items-center'>
+    <main className='flex flex-col items-center -mt-24'>
       {/* landing */}
       <Landing />
       {/* two boxes */}
