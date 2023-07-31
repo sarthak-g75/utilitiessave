@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { motion } from 'framer-motion'
 import About from '../About'
 import WelcomeBoxes from '../WelcomeBoxes'
 import ServicesCards from '../ServicesCards'

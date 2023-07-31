@@ -1,5 +1,6 @@
 import React from 'react'
 import ServiceCards from './ServiceCards'
+import { motion } from 'framer-motion'
 
 const ServicesCards = () => {
   return (
@@ -9,25 +10,43 @@ const ServicesCards = () => {
       </div>
       <div className='flex flex-col justify-center gap-6 -mt-20 md:flex-row md:flex-wrap text-tealGreen'>
         {/* card 1 */}
-        <ServiceCards
-          name='Electricity'
-          description=' Since the deregulation in the energy market, many changes have taken
-            place with the most significant one is the price increases.'
-        />
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.3 }}
+        >
+          <ServiceCards
+            name='Electricity'
+            description=' Since the deregulation in the energy market, many changes have taken
+          place with the most significant one is the price increases.'
+          />
+        </motion.div>
 
         {/* card 2 */}
-        <ServiceCards
-          name='Gas'
-          description=' Since the deregulation in the energy market, many changes have taken
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+        >
+          <ServiceCards
+            name='Gas'
+            description=' Since the deregulation in the energy market, many changes have taken
             place with the most significant one is the price increases.'
-        />
+          />
+        </motion.div>
 
         {/* card 3 */}
-        <ServiceCards
-          name='Water'
-          description='  From April 2017, the laws changed allowing business & charities to
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.3 }}
+        >
+          <ServiceCards
+            name='Water'
+            description='  From April 2017, the laws changed allowing business & charities to
           seek better deals for water.'
-        />
+          />
+        </motion.div>
       </div>
     </section>
   )
