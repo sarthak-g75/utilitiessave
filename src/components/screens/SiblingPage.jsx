@@ -13,7 +13,7 @@ const SiblingPage = ({ title, data, banner }) => {
       key={animationKey}
       className='flex flex-col items-center gap-10 max-w-[100%] pb-10'
     >
-      <section className='relative flex items-center justify-center gap-6 md:mt-8 px-4 py-16 w-full aspect-[16/2] overflow-hidden h-full'>
+      <section className='relative flex items-center justify-center gap-6 px-4 py-16 w-full aspect-[16/2] overflow-hidden h-full'>
         <motion.h1
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}

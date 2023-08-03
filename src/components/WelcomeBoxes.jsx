@@ -7,7 +7,8 @@ const WelcomeBoxes = () => {
     <motion.section className='flex flex-col md:flex-row px-8 gap-4 md:gap-8 max-w-[1440px] -mt-16'>
       <motion.div
         initial={{ opacity: 0, x: -20 }}
-        animate={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
         transition={{ delay: 0.7 }}
         exit={{ opacity: 1, x: 0 }}
         className='bg-primaryGreen shadow-xl rounded-xl p-8 flex flex-col items-center text-center gap-2 min-w-[300px] justify-center'
@@ -19,7 +20,8 @@ const WelcomeBoxes = () => {
       </motion.div>
       <motion.div
         initial={{ opacity: 0, x: 20 }}
-        animate={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
         transition={{ delay: 0.7 }}
         exit={{ opacity: 1, x: 0 }}
         className='flex flex-col items-center gap-2 p-8 text-center bg-white shadow-xl md:text-left md:items-start rounded-xl'

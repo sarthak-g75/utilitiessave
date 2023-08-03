@@ -13,6 +13,7 @@ function About() {
           transition={{ delay: 0.1 }}
           exit={{ opacity: 1, x: 0 }}
           className='px-3 py-1.5 text-lg font-semibold rounded-full text-primaryGreen bg-primaryGreen/20'
+          viewport={{ once: true }}
         >
           About Us
         </motion.span>
@@ -22,6 +23,7 @@ function About() {
           transition={{ delay: 0.2 }}
           exit={{ opacity: 1, x: 0 }}
           className='text-3xl font-bold md:hidden lg:block md:text-5xl text-tealGreen'
+          viewport={{ once: true }}
         >
           Renewable Energy for a Sustainable World
         </motion.span>
@@ -31,6 +33,7 @@ function About() {
           transition={{ delay: 0.3 }}
           exit={{ opacity: 1, x: 0 }}
           className='text-lg'
+          viewport={{ once: true }}
         >
           Empowering businesses since 2016. Maximum savings on gas and
           electricity. Unbeatable deals from top UK suppliers. No-obligation
@@ -41,7 +44,7 @@ function About() {
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.4 }}
-          exit={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
         >
           <Link className='flex items-center gap-1 px-3 py-1.5 rounded-full text-primaryGreen bg-primaryGreen/10'>
             Read More About Us <FiChevronRight />
@@ -57,6 +60,7 @@ function About() {
           src='./aboutus.jpg'
           alt=''
           className='rounded-md'
+          viewport={{ once: true }}
         />
       </div>
     </section>

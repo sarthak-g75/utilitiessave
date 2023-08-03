@@ -10,6 +10,7 @@ import QuoteForm from './components/QuoteForm'
 import ContacUs from './components/screens/ContacUs'
 import NewConnection from './components/screens/NewConnection'
 import Complaints from './components/screens/Complaints'
+import ScrollToTop from './utils/scrollToTop'
 
 function App() {
   const location = useLocation()
@@ -18,6 +19,7 @@ function App() {
     <div className='flex flex-col'>
       <Header />
       <Navbar home={location.pathname === '/'} />
+      <ScrollToTop />
       <Routes>
         <Route
           path='/'
