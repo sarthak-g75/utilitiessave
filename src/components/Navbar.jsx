@@ -35,6 +35,8 @@ const Navbar = ({ home }) => {
     />
   )
 
+  let [activeTab, setActiveTab] = useState(links[0].label)
+
   return (
     <>
       <div
@@ -55,17 +57,30 @@ const Navbar = ({ home }) => {
           />
           <div className='items-center gap-4 ml-auto font-medium capitalize md:flex'>
             {links.map((link, index) => (
-              <Link
-                className={`hidden lg:block hover:text-primaryGreen ${
-                  location.pathname === link.to
-                    ? 'text-primaryGreen'
-                    : 'text-tealGreen'
-                }`}
-                key={index}
-                to={link.to}
-              >
-                {link.label}
-              </Link>
+              <div className='relative'>
+                {location.pathname === link.to && (
+                  <motion.div
+                    layoutId='bar'
+                    className='absolute bottom-0 left-0 w-full h-[2px] bg-primaryGreen'
+                    transition={{
+                      type: 'spring',
+                      bounce: 0.2,
+                      duration: 0.6,
+                    }}
+                  />
+                )}
+                <Link
+                  className={`hidden lg:block hover:text-primaryGreen ${
+                    location.pathname === link.to
+                      ? 'text-primaryGreen'
+                      : 'text-tealGreen'
+                  }`}
+                  key={index}
+                  to={link.to}
+                >
+                  {link.label}
+                </Link>
+              </div>
             ))}
             <Link
               to='/contactUs'

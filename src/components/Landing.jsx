@@ -10,9 +10,9 @@ const Landing = () => {
     <section className='h-max pb-40 pt-44 md:p-0 md:h-[850px] relative text-white overflow-hidden w-full'>
       <motion.img
         initial={{}}
-        whileInView={{ scale: [1, 1.5, 1] }}
+        whileInView={{ scale: [1, 1.5] }}
         viewport={{ once: true }}
-        transition={{ duration: 10, repeat: Infinity, stiffness: 1 }}
+        transition={{ duration: 10, stiffness: 1 }}
         src='./landing-image.jpg'
         className='absolute top-0 left-0 object-cover object-left-bottom w-full h-full -z-10 brightness-75'
       />
