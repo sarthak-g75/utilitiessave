@@ -11,9 +11,9 @@ const Complaints = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1 }}
-          className='text-2xl font-bold tracking-wide text-center text-white md:text-5xl'
+          className='text-2xl font-bold tracking-wide text-center text-white uppercase md:text-5xl'
         >
-          New Connection
+          Complaint Procedure
         </motion.h1>
         <motion.img
           initial={{ opacity: 0, y: -10 }}
@@ -31,48 +31,76 @@ const Complaints = () => {
             transition={{ delay: 1 }}
             className='flex-[0.5] font-medium text-base lg:text-lg'
           >
-            <h1 className='text-xl font-extrabold'>
-              Call us for new meter installation now
-            </h1>
+            <h1 className='text-xl font-extrabold'>Complaints Procedure :</h1>
             <br />
             <br />
             <p className='text-base'>
-              Utilities Save have a meter installation team that can deal with
-              all aspects of a new connection from arranging a new electricity
-              or gas supply into a building, shop or any premises that does not
-              currently have any electricity or gas such as a new built to
-              working with commercial landlords who wish to alter the existing
-              layout and add additional electricity and gas meters.
+              Here at Utilities save we provide the best possible customers
+              service and make sure the customers are always satisfied with our
+              business service, still after delivering our best service if the
+              customer feels there a complaint that needs to be initiated this
+              should beemail or call on :
+              <br /> <br />
+              Please contact us via any of the following Utilities Save
+              complaints services :
+              <br /> <br />
+              <span className='font-bold'>Call : </span> 0207 112 9116 will call
+              you back to rectify your complaint and try to resolve it.
+              <br /> <br />
+              <span className='font-bold'>Email:</span>{' '}
+              complaints@utilitiessave.co.uk
+              <br /> <br />
+              <p>
+                When we receive a complaint from you, we initiate the following
+                in order to resolve your complaint: We will consider your
+                complaint by the close of business on the third working day
+                after receiving your complaint and, if possible, provide a
+                suitable verbal explanation within the time frame. lf we cannot
+                resolve your complaint by the third business day we will, within
+                five working days, provide you with a written acknowledgement of
+                receipt of your complaint and will also endeavour to provide a
+                resolution by then. lf we have been unable to resolve your
+                complaint by this time, we will advise you when <br /> <br />
+                We expect to be able to reach a conclusion, with the aim of
+                providing a final resolution as soon as possible. lf a final
+                response cannot be completed within eight weeks, we will mail
+                you explaining why we are not in a position to provide a final
+                response – and we will advise when we would be able to provide
+                one. <br />
+                <br /> We will still inform you that you have a choice to refer
+                the complaint to the Ombudsman service if you are dissatisfied
+                with the explanation for our delay.
+              </p>
             </p>
             <br />
-            <h2 className='text-lg font-bold text-tealGreen'>
-              Standard meters can be installed in as little as 3 -4 working days
-              for gas or 10-18 working days for electric, once supplier flows
-              are received.
+            <h2 className='text-lg font-bold underline text-tealGreen'>
+              You may contact ombudsman any of the following ways :
             </h2>
             <br />
-            <h3 className='font-semibold underline text-tealGreen'>
-              Here is what we can do for you:
-            </h3>
-            <br />
-            <ul className='list-disc'>
-              <li>
-                Gas & electricity meter installations for commercial premises.
-              </li>
-              <li>Service upgrades/downgrades</li>
-              <li>Alter or relocation of gas and electricity services.</li>
-              <li>New gas and electric service connections</li>
-            </ul>
-            <br />
-            <p className='text-base'>
-              Our team will support on every level to get the new meter
-              installation done hassle free.
+            <p className='text-base w-max'>
+              <span className='font-bold '>Tel :</span>{' '}
+              <span className='font-bold text-primaryGreen'>0207 112 9116</span>{' '}
             </p>
             <br />
-            <p className='text-base'>
-              Call us on{' '}
-              <span className='text-primaryGreen'>0207 112 9116</span> <br />
-              or email site.services@utilitiessave.co.uk
+            <p className=' w-max'>
+              <span className='font-bold '>Post: </span>
+              <span>
+                Ombudsman Services: Energy, P.O. Box 966, Warrington, WA4 9DF
+              </span>
+            </p>
+            <br />
+            <p className=' w-max'>
+              <span className='font-bold '>Email: </span>
+              <span className='font-normal text-primaryGreen'>
+                enquiry@ombudsman-services.org
+              </span>
+            </p>
+            <br />
+            <p className=' w-max'>
+              <span className='font-bold '>Website: </span>
+              <span className='font-normal text-primaryGreen'>
+                www.ombusdman-services.org
+              </span>
             </p>
           </motion.div>
           <motion.img
