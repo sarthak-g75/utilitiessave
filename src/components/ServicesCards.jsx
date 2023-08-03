@@ -14,6 +14,7 @@ const ServicesCards = () => {
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3 }}
+          viewport={{ once: true }}
         >
           <ServiceCards
             name='Electricity'
@@ -27,6 +28,7 @@ const ServicesCards = () => {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
+          viewport={{ once: true }}
         >
           <ServiceCards
             name='Gas'
@@ -40,6 +42,7 @@ const ServicesCards = () => {
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3 }}
+          viewport={{ once: true }}
         >
           <ServiceCards
             name='Water'

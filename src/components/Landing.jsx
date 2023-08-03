@@ -10,7 +10,8 @@ const Landing = () => {
     <section className='h-max pb-40 pt-44 md:p-0 md:h-[850px] relative text-white overflow-hidden w-full'>
       <motion.img
         initial={{}}
-        animate={{ scale: [1, 1.5, 1] }}
+        whileInView={{ scale: [1, 1.5, 1] }}
+        viewport={{ once: true }}
         transition={{ duration: 10, repeat: Infinity, stiffness: 1 }}
         src='./landing-image.jpg'
         className='absolute top-0 left-0 object-cover object-left-bottom w-full h-full -z-10 brightness-75'
@@ -18,8 +19,9 @@ const Landing = () => {
       <div className='flex flex-col items-start justify-center w-full h-full gap-2 p-4 -mt-16 md:gap-4 md:items-center text-tealGreen'>
         <motion.div
           initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
+          viewport={{ once: true }}
           className='flex flex-col items-start text-3xl font-extrabold text-center md:items-center md:text-7xl '
         >
           <span>Savings is</span>
