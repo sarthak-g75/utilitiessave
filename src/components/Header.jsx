@@ -6,7 +6,8 @@ const Header = () => {
   return (
     <header className='flex flex-col items-center justify-center gap-2 p-2 py-3 text-xs text-white normal-case border-b md:text-sm md:gap-4 border-white/10 bg-tealGreen md:flex-row'>
       <span className='flex items-center gap-2 '>
-        <FaVoicemail className='text-base text-primaryGreen' /> info@utilitiessave.com
+        <FaVoicemail className='text-base text-primaryGreen' />{' '}
+        info@utilitiessave.com
       </span>
       <span className='flex items-center gap-2 '>
         <FiPhoneCall className='text-base text-primaryGreen' />

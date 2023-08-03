@@ -11,6 +11,7 @@ function About() {
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.1 }}
+          exit={{ opacity: 1, x: 0 }}
           className='px-3 py-1.5 text-lg font-semibold rounded-full text-primaryGreen bg-primaryGreen/20'
         >
           About Us
@@ -19,6 +20,7 @@ function About() {
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2 }}
+          exit={{ opacity: 1, x: 0 }}
           className='text-3xl font-bold md:hidden lg:block md:text-5xl text-tealGreen'
         >
           Renewable Energy for a Sustainable World
@@ -27,6 +29,7 @@ function About() {
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3 }}
+          exit={{ opacity: 1, x: 0 }}
           className='text-lg'
         >
           Empowering businesses since 2016. Maximum savings on gas and
@@ -38,6 +41,7 @@ function About() {
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.4 }}
+          exit={{ opacity: 1, x: 0 }}
         >
           <Link className='flex items-center gap-1 px-3 py-1.5 rounded-full text-primaryGreen bg-primaryGreen/10'>
             Read More About Us <FiChevronRight />
@@ -49,6 +53,7 @@ function About() {
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.5 }}
+          exit={{ opacity: 1, x: 0 }}
           src='./aboutus.jpg'
           alt=''
           className='rounded-md'

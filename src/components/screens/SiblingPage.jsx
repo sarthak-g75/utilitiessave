@@ -34,11 +34,11 @@ const SiblingPage = ({ title, data, banner }) => {
         {data.map((d, index) => (
           <div
             className={`flex lg:max-w-[1080px] flex-col-reverse lg:flex-row justify-center gap-10 px-4 items-center max-w-[500px] ${
-              index % 2 == 0 && 'lg:flex-row-reverse'
+              index % 2 === 0 && 'lg:flex-row-reverse'
             }`}
           >
             <motion.div
-              initial={{ opacity: 0, x: index % 2 == 0 ? -100 : 100 }}
+              initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.7 * index + 1 }}
               className='flex-[0.5] font-medium text-base lg:text-lg'
@@ -46,7 +46,7 @@ const SiblingPage = ({ title, data, banner }) => {
               {d.para}
             </motion.div>
             <motion.img
-              initial={{ opacity: 0, x: index % 2 == 0 ? 100 : -100 }}
+              initial={{ opacity: 0, x: index % 2 === 0 ? 100 : -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.7 * index + 1 }}
               className='object-cover w-full max-h-72 border rounded-xl flex-[0.5] '

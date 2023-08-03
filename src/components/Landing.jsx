@@ -10,8 +10,9 @@ const Landing = () => {
     <section className='h-max pb-40 pt-44 md:p-0 md:h-[850px] relative text-white overflow-hidden w-full'>
       <motion.img
         initial={{}}
-        animate={{ scale: [1, 1.5, 1] }}
-        transition={{ duration: 10, repeat: Infinity, stiffness: 1 }}
+        animate={{ scale: [1, 1.5] }}
+        transition={{ duration: 10, stiffness: 1 }}
+        exit={{ scale: 1.5 }}
         src='./landing-image.jpg'
         className='absolute top-0 left-0 object-cover object-left-bottom w-full h-full -z-10 brightness-75'
       />
@@ -20,6 +21,7 @@ const Landing = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
+          exit={{ opacity: 1, y: 0 }}
           className='flex flex-col items-start text-3xl font-extrabold text-center md:items-center md:text-7xl '
         >
           <span>Savings is</span>
@@ -31,6 +33,7 @@ const Landing = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
+          exit={{ opacity: 1, y: 0 }}
           className='max-w-md font-medium md:text-center'
         >
           Start Saving Money with Utilities Save, WF will Save up to 40% on your
@@ -43,6 +46,7 @@ const Landing = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
+              exit={{ opacity: 1 }}
             >
               Contact Us
             </motion.div>
@@ -53,6 +57,7 @@ const Landing = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
+              exit={{ opacity: 1 }}
             >
               About Us
             </motion.div>
