@@ -25,7 +25,10 @@ const Footer = () => {
               <div className='ml-1 text-xl font-bold'>Help</div>
               <ul className='flex flex-col gap-2'>
                 <li>
-                  <Link className='flex items-center gap-2 font-medium transition-all group hover:text-primaryGreen'>
+                  <Link
+                    className='flex items-center gap-2 font-medium transition-all group hover:text-primaryGreen'
+                    to={'/complaints-procedure'}
+                  >
                     <FiChevronRight className='text-xl transition-all text-primaryGreen group-hover:translate-x-1' />{' '}
                     Complaints Procedure
                   </Link>

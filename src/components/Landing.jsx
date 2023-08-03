@@ -33,6 +33,7 @@ const Landing = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
+          exit={{ opacity: 1, y: 0 }}
           className='max-w-md font-medium md:text-center'
         >
           Start Saving Money with Utilities Save, WF will Save up to 40% on your
@@ -45,6 +46,7 @@ const Landing = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
+              exit={{ opacity: 1 }}
             >
               Contact Us
             </motion.div>
@@ -55,6 +57,7 @@ const Landing = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
+              exit={{ opacity: 1 }}
             >
               About Us
             </motion.div>

@@ -8,6 +8,8 @@ import SiblingPage from './components/screens/SiblingPage'
 import { pages } from './data'
 import QuoteForm from './components/QuoteForm'
 import ContacUs from './components/screens/ContacUs'
+import NewConnection from './components/screens/NewConnection'
+import Complaints from './components/screens/Complaints'
 
 function App() {
   const location = useLocation()
@@ -36,6 +38,14 @@ function App() {
         <Route
           path='/contactUs'
           element={<ContacUs />}
+        />
+        <Route
+          path='/new-connection'
+          element={<NewConnection />}
+        />
+        <Route
+          path='/complaints-procedure'
+          element={<Complaints />}
         />
       </Routes>
       {location.pathname !== '/contactUs' && <QuoteForm />}

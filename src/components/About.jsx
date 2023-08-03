@@ -11,6 +11,7 @@ function About() {
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.1 }}
+          exit={{ opacity: 1, x: 0 }}
           className='px-3 py-1.5 text-lg font-semibold rounded-full text-primaryGreen bg-primaryGreen/20'
           viewport={{ once: true }}
         >
@@ -20,6 +21,7 @@ function About() {
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2 }}
+          exit={{ opacity: 1, x: 0 }}
           className='text-3xl font-bold md:hidden lg:block md:text-5xl text-tealGreen'
           viewport={{ once: true }}
         >
@@ -29,6 +31,7 @@ function About() {
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3 }}
+          exit={{ opacity: 1, x: 0 }}
           className='text-lg'
           viewport={{ once: true }}
         >
@@ -53,6 +56,7 @@ function About() {
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.5 }}
+          exit={{ opacity: 1, x: 0 }}
           src='./aboutus.jpg'
           alt=''
           className='rounded-md'
