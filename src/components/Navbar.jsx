@@ -37,6 +37,21 @@ const Navbar = ({ home }) => {
 
   let [activeTab, setActiveTab] = useState(links[0].label)
 
+  const scrollToElement = () => {
+    const element = document.getElementById('quote')
+    // Alternatively, you can use querySelector if you have a more complex selector:
+    // const element = document.querySelector('.scroll-to-me');
+
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth', // You can use 'auto' instead for immediate scrolling
+        block: 'start', // You can change 'start' to 'center' or 'end' depending on your desired position
+        inline: 'nearest', // You can change 'nearest' to 'start' or 'end' if you want to align the element at the start or end of the scroll container
+        top: '100px', // Adjust this value as needed for your desired margin
+      })
+    }
+  }
+
   return (
     <>
       <div
@@ -82,12 +97,12 @@ const Navbar = ({ home }) => {
                 </Link>
               </div>
             ))}
-            <Link
-              to='/contactUs'
-              className='hidden px-6 py-2 ml-auto text-white transition-all rounded-full lg:block bg-primaryGreen hover:text-tealGreen'
+            <div
+              onClick={scrollToElement}
+              className='hidden px-6 py-2 ml-auto text-white transition-all rounded-full cursor-pointer lg:block bg-primaryGreen hover:text-tealGreen'
             >
               Contact Us
-            </Link>
+            </div>
           </div>
           <button className=' w-fit lg:hidden'>{hamburgerMenu}</button>
           {/* <div className=' w-fit md:hidden'>{cancelBtn}</div> */}
