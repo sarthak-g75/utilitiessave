@@ -47,7 +47,7 @@ const Navbar = ({ home }) => {
         behavior: 'smooth', // You can use 'auto' instead for immediate scrolling
         block: 'start', // You can change 'start' to 'center' or 'end' depending on your desired position
         inline: 'nearest', // You can change 'nearest' to 'start' or 'end' if you want to align the element at the start or end of the scroll container
-        top: '100px', // Adjust this value as needed for your desired margin
+        // Adjust this value as needed for your desired margin
       })
     }
   }
@@ -134,7 +134,7 @@ const Navbar = ({ home }) => {
                   {link.label}
                 </Link>
               ))}
-              <Link
+              {/* <Link
                 to='/contactUs'
                 className={`lg:block font-medium text-xl ${
                   location.pathname === '/ContactUs'
@@ -144,7 +144,7 @@ const Navbar = ({ home }) => {
               >
                 {' '}
                 Contact Us
-              </Link>
+              </Link> */}
             </motion.div>
           </div>
         )}

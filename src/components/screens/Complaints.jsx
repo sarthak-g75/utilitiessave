@@ -106,7 +106,12 @@ const Complaints = () => {
             <p className=' w-max'>
               <span className='font-bold '>Website: </span>
               <span className='font-normal text-primaryGreen'>
-                www.ombusdman-services.org
+                <a
+                  target='-blank'
+                  href='https://www.ombudsman-services.org/'
+                >
+                  www.ombusdman-services.org
+                </a>
               </span>
             </p>
           </motion.div>

@@ -25,7 +25,7 @@ function About() {
           className='text-3xl font-bold md:hidden lg:block md:text-5xl text-tealGreen'
           viewport={{ once: true }}
         >
-          Renewable Energy for a Sustainable World
+          Utilities Save: Maximizing Business Savings in the Energy Market
         </motion.span>
         <motion.span
           initial={{ opacity: 0, x: 20 }}
@@ -46,7 +46,10 @@ function About() {
           transition={{ delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <Link className='flex items-center gap-1 px-3 py-1.5 rounded-full text-primaryGreen bg-primaryGreen/10'>
+          <Link
+            className='flex items-center gap-1 px-3 py-1.5 rounded-full text-primaryGreen bg-primaryGreen/10'
+            to={'/about'}
+          >
             Read More About Us <FiChevronRight />
           </Link>
         </motion.span>

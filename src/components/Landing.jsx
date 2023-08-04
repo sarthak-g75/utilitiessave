@@ -5,6 +5,20 @@ import { motion } from 'framer-motion'
 
 const Landing = () => {
   const [scale, setScale] = useState(0)
+  const scrollToElement = () => {
+    const element = document.getElementById('quote')
+    // Alternatively, you can use querySelector if you have a more complex selector:
+    // const element = document.querySelector('.scroll-to-me');
+
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth', // You can use 'auto' instead for immediate scrolling
+        block: 'start', // You can change 'start' to 'center' or 'end' depending on your desired position
+        inline: 'nearest', // You can change 'nearest' to 'start' or 'end' if you want to align the element at the start or end of the scroll container
+        // Adjust this value as needed for your desired margin
+      })
+    }
+  }
 
   return (
     <section className='h-max pb-40 pt-44 md:p-0 md:h-[850px] relative text-white overflow-hidden w-full'>
@@ -40,7 +54,7 @@ const Landing = () => {
           Utilities bill.
         </motion.div>
         <div className='flex gap-2 md:gap-4'>
-          <Link>
+          <Link onClick={scrollToElement}>
             <motion.div
               className='px-6 py-2 font-medium text-white transition-all border rounded-full md:border-2 border-primaryGreen font-m6 md:py-4 h-max md:px-12 bg-primaryGreen hover:text-tealGreen md:text-xl'
               initial={{ opacity: 0 }}
