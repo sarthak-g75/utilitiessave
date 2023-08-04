@@ -19,7 +19,7 @@ const Complaints = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          src={'./electricityPage.jpg'}
+          src={'./complaint.jpg'}
           className='absolute top-0 left-0 object-cover w-full h-full -z-10 brightness-50'
         />
       </section>
@@ -29,7 +29,7 @@ const Complaints = () => {
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1 }}
-            className='flex-[0.5] font-medium text-base lg:text-lg'
+            className='text-base font-medium lg:text-lg'
           >
             <h1 className='text-xl font-extrabold'>Complaints Procedure :</h1>
             <br />
@@ -92,7 +92,9 @@ const Complaints = () => {
             <p className=' w-max'>
               <span className='font-bold '>Email: </span>
               <span className='font-normal text-primaryGreen'>
-                enquiry@ombudsman-services.org
+                <a href='mailto:enquiry@ombudsman-services.org'>
+                  enquiry@ombudsman-services.org
+                </a>
               </span>
             </p>
             <br />
@@ -103,14 +105,6 @@ const Complaints = () => {
               </span>
             </p>
           </motion.div>
-          <motion.img
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1 }}
-            className='object-cover w-full max-h-72 border rounded-xl flex-[0.5] '
-            src={'./gasScreen.png'}
-            alt=''
-          />
         </div>
       </section>
     </div>

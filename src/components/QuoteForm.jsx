@@ -28,7 +28,10 @@ const QuoteForm = () => {
   }
 
   return (
-    <section className='flex flex-col items-center justify-center w-full py-10 pb-16 mt-0 border-b lg:mt-32 border-tealGreen/10 bg-tealGreen'>
+    <section
+      id='quote'
+      className='flex flex-col items-center justify-center w-full py-10 pb-16 mt-0 border-b lg:mt-32 border-tealGreen/10 bg-tealGreen'
+    >
       <div className='flex flex-col items-center text-center lg:text-left lg:items-start px-5  lg:gap-10 lg:flex-row justify-center lg:max-w-[1240px] w-full max-w-[700px]'>
         <div className='flex-[0.5] min-w-[350px] flex flex-col gap-4 text-lightGreen'>
           <h2 className='text-4xl font-bold text-white'>Request a Quote</h2>

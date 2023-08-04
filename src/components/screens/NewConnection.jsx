@@ -16,8 +16,8 @@ const NewConnection = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          src={'./electricityPage.jpg'}
-          className='absolute top-0 left-0 object-cover w-full h-full -z-10 brightness-50'
+          src={'./newConn.jpg'}
+          className='absolute top-0 left-0 object-cover w-full h-full -z-10 brightness-50 '
         />
       </section>
       <section className='flex flex-col gap-10 max-w-[1080px] lg:py-20'>
@@ -52,7 +52,7 @@ const NewConnection = () => {
               Here is what we can do for you:
             </h3>
             <br />
-            <ul className='list-disc'>
+            <ul className='px-5 list-disc'>
               <li>
                 Gas & electricity meter installations for commercial premises.
               </li>
@@ -69,15 +69,21 @@ const NewConnection = () => {
             <p className='text-base'>
               Call us on{' '}
               <span className='text-primaryGreen'>0207 112 9116</span> <br />
-              or email site.services@utilitiessave.co.uk
+              or <span className='text-semibold'>email</span>{' '}
+              <a
+                className='pointer text-primaryGreen '
+                href='mailto:site.services@utilitiessave.co.uk'
+              >
+                site.services@utilitiessave.co.uk
+              </a>
             </p>
           </motion.div>
           <motion.img
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1 }}
-            className='object-cover w-full max-h-72 border rounded-xl flex-[0.5] '
-            src={'./gasScreen.png'}
+            className='object-contain w-full max-h-72  rounded-xl flex-[0.5] '
+            src={'./newConnection.png'}
             alt=''
           />
         </div>

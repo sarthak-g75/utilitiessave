@@ -35,36 +35,60 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className='ml-1 text-xl font-bold'>Find Us On Google</div>
+            <div className='ml-1 text-xl font-bold'>Navigation Links</div>
             <ul className='flex flex-col gap-2'>
               <li>
-                <Link className='flex items-center gap-2 font-medium transition-all group hover:text-primaryGreen'>
+                <Link
+                  className='flex items-center gap-2 font-medium transition-all group hover:text-primaryGreen'
+                  to={'/'}
+                >
                   <FiChevronRight className='text-xl transition-all text-primaryGreen group-hover:translate-x-1' />{' '}
-                  Best Best Energy Prices UK
+                  Home
                 </Link>
               </li>
               <li>
-                <Link className='flex items-center gap-2 font-medium transition-all group hover:text-primaryGreen'>
+                <Link
+                  className='flex items-center gap-2 font-medium transition-all group hover:text-primaryGreen'
+                  to={'/electricity'}
+                >
                   <FiChevronRight className='text-xl transition-all text-primaryGreen group-hover:translate-x-1' />{' '}
-                  Best Cheap Energy Prices in UK
+                  Electricity
                 </Link>
               </li>
               <li>
-                <Link className='flex items-center gap-2 font-medium transition-all group hover:text-primaryGreen'>
+                <Link
+                  className='flex items-center gap-2 font-medium transition-all group hover:text-primaryGreen'
+                  to={'/gas'}
+                >
                   <FiChevronRight className='text-xl transition-all text-primaryGreen group-hover:translate-x-1' />{' '}
-                  Best Cheap Electricity in UK
+                  Gas
                 </Link>
               </li>
               <li>
-                <Link className='flex items-center gap-2 font-medium transition-all group hover:text-primaryGreen'>
+                <Link
+                  className='flex items-center gap-2 font-medium transition-all group hover:text-primaryGreen'
+                  to={'/water'}
+                >
                   <FiChevronRight className='text-xl transition-all text-primaryGreen group-hover:translate-x-1' />{' '}
-                  Best Electricity Comparison in UK
+                  Water
                 </Link>
               </li>
               <li>
-                <Link className='flex items-center gap-2 font-medium transition-all group hover:text-primaryGreen'>
+                <Link
+                  className='flex items-center gap-2 font-medium transition-all group hover:text-primaryGreen'
+                  to={'/new-connection'}
+                >
                   <FiChevronRight className='text-xl transition-all text-primaryGreen group-hover:translate-x-1' />{' '}
-                  Best Best Energy Prices in UK
+                  New Connection
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className='flex items-center gap-2 font-medium transition-all group hover:text-primaryGreen '
+                  to={'/about'}
+                >
+                  <FiChevronRight className='text-xl transition-all text-primaryGreen group-hover:translate-x-1' />{' '}
+                  About Us
                 </Link>
               </li>
             </ul>
