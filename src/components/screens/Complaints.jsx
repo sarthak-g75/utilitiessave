@@ -48,7 +48,12 @@ const Complaints = () => {
               you back to rectify your complaint and try to resolve it.
               <br /> <br />
               <span className='font-bold'>Email:</span>{' '}
-              complaints@utilitiessave.co.uk
+              <a
+                className='cursor-pointer text-primaryGreen'
+                href='mailto:complaints@utilitiessave.co.uk'
+              >
+                complaints@utilitiessave.co.uk
+              </a>
               <br /> <br />
               <p>
                 When we receive a complaint from you, we initiate the following
