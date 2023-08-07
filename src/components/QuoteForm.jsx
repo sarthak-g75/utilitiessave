@@ -12,10 +12,10 @@ const QuoteForm = () => {
 
     emailjs
       .sendForm(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        'service_b0kwv6d',
+        'template_ekiwfja',
         form.current,
-        'YOUR_PUBLIC_KEY'
+        'YoGsS23d0t7-aL5CW'
       )
       .then(
         (result) => {
@@ -77,6 +77,17 @@ const QuoteForm = () => {
             />
             <div className='flex items-center gap-1 italic font-medium capitalize transition-all peer-focus/input:translate-x-2 peer-focus/input:text-primaryGreen'>
               <FiChevronRight className='' /> Mobile
+            </div>
+          </div>
+          <div className='flex flex-col-reverse items-start justify-between w-full gap-2 rounded-lg text-tealGreen'>
+            <input
+              placeholder='Enter the Subject of your Mail'
+              className='w-full p-2 font-medium bg-transparent border-2 rounded-md outline-none border-tealGreen placeholder:text-tealGreen/50 focus:outline-none peer/input '
+              type='text'
+              name='subject'
+            />
+            <div className='flex items-center gap-1 italic font-medium capitalize transition-all peer-focus/input:translate-x-2 peer-focus/input:text-primaryGreen'>
+              <FiChevronRight className='' /> Subject
             </div>
           </div>
           <div className='flex flex-col-reverse items-start justify-between w-full gap-2 rounded-lg text-tealGreen'>
