@@ -51,7 +51,7 @@ const QuoteForm = () => {
 
   return (
     <section>
-      <div className={`${noti ? 'block' : 'hidden'} sticky`}>
+      <div className={`${noti ? 'block' : 'hidden'} `}>
         {status ? (
           <Alert
             color='green'
