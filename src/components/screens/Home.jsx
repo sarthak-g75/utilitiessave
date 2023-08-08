@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { motion } from 'framer-motion'
 import About from '../About'
 import WelcomeBoxes from '../WelcomeBoxes'
 import ServicesCards from '../ServicesCards'
@@ -9,7 +8,7 @@ import Landing from '../Landing'
 import InfiniteCarasoul from '../InfiniteCarasoul'
 
 const Home = () => {
-  document.title = 'Utilitiessave'
+  document.title = 'Utilitiessave - Electricity in UK | Gas in UK'
   return (
     <main className='flex flex-col items-center -mt-24'>
       {/* landing */}
