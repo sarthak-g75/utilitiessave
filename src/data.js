@@ -2,7 +2,7 @@ export const pages = [
   {
     route: '/electricity',
     banner: './electricityPage.jpg',
-    title: 'ELECTRICITY',
+    title: 'Electricity',
     data: [
       {
         para: (

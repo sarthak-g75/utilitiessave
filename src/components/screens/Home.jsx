@@ -9,6 +9,7 @@ import Landing from '../Landing'
 import InfiniteCarasoul from '../InfiniteCarasoul'
 
 const Home = () => {
+  document.title = 'Utilitiessave'
   return (
     <main className='flex flex-col items-center -mt-24'>
       {/* landing */}

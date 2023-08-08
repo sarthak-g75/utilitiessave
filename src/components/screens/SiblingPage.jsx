@@ -2,6 +2,8 @@ import { motion } from 'framer-motion'
 import React, { useEffect, useRef, useState } from 'react'
 
 const SiblingPage = ({ title, data, banner }) => {
+  document.title = `Utilitiessave- ${title}`
+
   const [animationKey, setAnimationKey] = useState(0)
 
   useEffect(() => {
