@@ -9,6 +9,7 @@ const QuoteForm = () => {
   const form = useRef()
   const [name, setname] = useState()
   const [email, setemail] = useState()
+  const [disable, setdisable] = useState(false)
   const [mobile, setmobile] = useState()
   const [message, setmessage] = useState()
   const [noti, setnoti] = useState(false)
@@ -16,7 +17,7 @@ const QuoteForm = () => {
   const [status, setstatus] = useState(false)
   const sendEmail = (e) => {
     e.preventDefault()
-
+    setdisable(true)
     emailjs
       .sendForm(
         'service_b0kwv6d',
@@ -34,6 +35,7 @@ const QuoteForm = () => {
           setsubject('')
           setstatus(true)
           setnoti(true)
+          setdisable(false)
           setTimeout(() => {
             setnoti(false)
             setstatus(false)
@@ -159,9 +161,14 @@ const QuoteForm = () => {
               </div>
             </div>
             <input
-              className='w-full px-6 py-4 mt-4 font-medium text-white transition-all rounded-md cursor-pointer bg-tealGreen hover:bg-tealGreen/90'
+              className={` w-full px-6 py-4 mt-4 font-medium  transition-all rounded-md text-white  ${
+                disable
+                  ? ' bg-gray-500 cursor-not-allowed'
+                  : ' cursor-pointer bg-tealGreen hover:bg-tealGreen/90'
+              } `}
               type='submit'
-              value='Send'
+              value={disable ? 'Sending...' : 'Send'}
+              disabled={disable}
             />
           </form>
         </div>
