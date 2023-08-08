@@ -33,8 +33,8 @@ const QuoteForm = () => {
           setemail('')
           setmessage('')
           setsubject('')
-          setstatus(true)
           setnoti(true)
+          setstatus(true)
           setdisable(false)
           setTimeout(() => {
             setnoti(false)
@@ -50,10 +50,10 @@ const QuoteForm = () => {
         }
       )
   }
-
+  //  {`${noti ? 'sticky top-0' : 'hidden'} `}
   return (
     <section>
-      <div className={`${noti ? 'block' : 'hidden'} `}>
+      <div className={`${noti ? 'sticky top-0 z-30' : 'hidden'} `}>
         {status ? (
           <Alert
             color='green'
