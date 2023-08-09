@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 const ServiceCards = (props) => {
-  const image = './' + props.name + '.jpg'
+  const image = './' + props.name.toLowerCase() + '.jpg'
   return (
     <div className='flex flex-col items-center justify-between overflow-hidden text-center bg-white shadow-xl rounded-xl max-w-[350px]'>
       <img
