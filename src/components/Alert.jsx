@@ -4,7 +4,12 @@ import { MdFileDownloadDone, MdDangerous } from 'react-icons/md'
 const Alert = (props) => {
   return (
     <div
-      className={` relative  bg-${props.color}-100 border-t-4 $ border-${props.color}-500 rounded-b text-teal-900 px-4 py-3 shadow-md`}
+      style={{
+        backgroundColor: 'white',
+        borderTopColor: props.color,
+        borderTop: '5px solid',
+      }}
+      className={` relative    border-t-4  rounded-b text-teal-900 px-4 py-3 shadow-md`}
       role='alert'
     >
       <div class='flex gap-5'>

@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 const Landing = () => {
-  const [scale, setScale] = useState(0)
+  // const [scale, setScale] = useState(0)
   const scrollToElement = () => {
     const element = document.getElementById('quote')
     // Alternatively, you can use querySelector if you have a more complex selector:
@@ -48,9 +48,9 @@ const Landing = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
           exit={{ opacity: 1, y: 0 }}
-          className='max-w-md font-medium md:text-center'
+          className='max-w-md font-bold md:text-center'
         >
-          Start Saving Money with Utilities Save, WF will Save up to 40% on your
+          Start Saving Money with Utilities Save, We will Save up to 40% on your
           Utilities bill.
         </motion.div>
         <div className='flex gap-2 md:gap-4'>
@@ -62,10 +62,10 @@ const Landing = () => {
               transition={{ delay: 0.8 }}
               exit={{ opacity: 1 }}
             >
-              Contact Us
+              Get A Quote
             </motion.div>
           </Link>
-          <Link>
+          <Link to={'/about'}>
             <motion.div
               className='px-6 py-2 font-medium transition-all border-2 rounded-full bg-white/50 md:border-2 md:py-4 h-max md:px-12 hover:bg-white hover:text-tealGreen md:text-xl'
               initial={{ opacity: 0 }}

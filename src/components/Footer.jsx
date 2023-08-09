@@ -13,11 +13,21 @@ const Footer = () => {
               alt=''
               className='w-40 md:w-60'
             />
-            <div className=''>
+            <div>
               Here at utilities save. our aim is to provide you with maximum
               savings and best services for your business utilities. we search
               across most of the uk suppliers both small and large and identify
               what is the best possible deal for your business.
+            </div>
+            <div className='flex flex-col justify-start gap-2 '>
+              <img
+                className='max-w-[200px] md:max-w-xs'
+                src='./Ombudsman.webp'
+                alt=''
+              />
+              <span className='text-lg tracking-widest text-center text-black opacity-75'>
+                ADR Scheme Member
+              </span>
             </div>
           </div>
           <div className='flex flex-col items-start gap-4 w-max'>

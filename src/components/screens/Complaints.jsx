@@ -84,7 +84,7 @@ const Complaints = () => {
           <br />
           <p>
             <span className='font-bold '>Tel :</span>{' '}
-            <span className='font-bold text-primaryGreen'>0207 112 9116</span>{' '}
+            <span className='font-bold text-primaryGreen'>0330 440 1642</span>{' '}
           </p>
           <br />
           <p>

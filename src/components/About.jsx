@@ -22,7 +22,7 @@ function About() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2 }}
           exit={{ opacity: 1, x: 0 }}
-          className='text-3xl font-bold md:hidden lg:block md:text-5xl text-tealGreen'
+          className='text-2xl font-bold md:hidden lg:block md:text-4xl text-tealGreen'
           viewport={{ once: true }}
         >
           Utilities Save: Maximizing Business Savings in the Energy Market
@@ -36,9 +36,9 @@ function About() {
           viewport={{ once: true }}
         >
           Empowering businesses since 2016. Maximum savings on gas and
-          electricity. Unbeatable deals from top UK suppliers. No-obligation
-          service. Unique energy reduction solutions. Join us for cost-effective
-          energy management.
+          electricity. Competitive deals from UK top energy suppliers.
+          No-obligation service. Unique energy reduction solutions. Join us for
+          cost-effective energy management.
         </motion.span>
         <motion.span
           initial={{ opacity: 0, x: 20 }}

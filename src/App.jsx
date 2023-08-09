@@ -11,14 +11,16 @@ import ContacUs from './components/screens/ContacUs'
 import NewConnection from './components/screens/NewConnection'
 import Complaints from './components/screens/Complaints'
 import ScrollToTop from './utils/scrollToTop'
+import Whatsapp from './components/Whatsapp'
 
 function App() {
   const location = useLocation()
   console.log(location.pathname)
   return (
-    <div className='flex flex-col'>
+    <div className='relative flex flex-col'>
       <Header />
       <Navbar home={location.pathname === '/'} />
+      <Whatsapp />
       <ScrollToTop />
       <Routes>
         <Route

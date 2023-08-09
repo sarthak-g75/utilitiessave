@@ -16,7 +16,10 @@ const ServiceCards = (props) => {
         <span className='w-full px-4 font-medium text-l text-slate-500 text-ellipsis line-clamp-3'>
           {props.description}
         </span>
-        <Link className='px-6 py-2 mt-auto font-medium text-white transition-all rounded-full bg-primaryGreen hover:text-tealGreen'>
+        <Link
+          className='px-6 py-2 mt-auto font-medium text-white transition-all rounded-full bg-primaryGreen hover:text-tealGreen'
+          to={`/${props.name}`}
+        >
           Read More About {props.name}
         </Link>
       </div>

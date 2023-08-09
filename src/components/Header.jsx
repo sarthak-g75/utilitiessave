@@ -4,18 +4,18 @@ import { FiPhoneCall, FiClock } from 'react-icons/fi'
 
 const Header = () => {
   return (
-    <header className='flex flex-col items-center justify-center gap-2 p-2 py-3 text-xs text-white normal-case border-b md:text-sm md:gap-4 border-white/10 bg-tealGreen md:flex-row'>
+    <header className='flex flex-col items-center justify-center gap-2 p-2 py-3 text-sm text-white normal-case border-b md:text-base md:gap-4 border-white/10 bg-tealGreen md:flex-row'>
       <span className='flex items-center gap-2 '>
-        <FaVoicemail className='text-base text-primaryGreen' />{' '}
+        <FaVoicemail className='text-lg text-primaryGreen' />{' '}
         info@utilitiessave.com
       </span>
       <span className='flex items-center gap-2 '>
-        <FiPhoneCall className='text-base text-primaryGreen' />
+        <FiPhoneCall className='text-lg text-primaryGreen' />
         0207 112 9116
       </span>
       <span className='flex items-center gap-2 '>
-        <FiClock className='text-base text-primaryGreen' />
-        mon-fri 8:30AM- 5:30PM
+        <FiClock className='text-lg text-primaryGreen' />
+        Mon-Fri 8:30AM- 5:30PM
       </span>
     </header>
   )
