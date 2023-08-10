@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { FiPlus, FiMenu } from 'react-icons/fi'
 import { AnimatePresence, motion } from 'framer-motion'
@@ -15,6 +15,7 @@ const Navbar = ({ home }) => {
 
   const location = useLocation()
   const ref = useRef()
+  // eslint-disable-next-line
   const [height, setheight] = useState(0)
 
   const [isMobile, setIsMobile] = useState(false)
@@ -35,7 +36,7 @@ const Navbar = ({ home }) => {
     />
   )
 
-  let [activeTab, setActiveTab] = useState(links[0].label)
+  // let [activeTab, setActiveTab] = useState(links[0].label)
 
   const scrollToElement = () => {
     const element = document.getElementById('quote')
@@ -65,11 +66,13 @@ const Navbar = ({ home }) => {
           {/* <div className='text-xl font-bold text-primaryGreen'>
             UTILITIES SAVE
           </div> */}
-          <img
-            src='./logo.png'
-            alt=''
-            className='w-40 md:w-60'
-          />
+          <Link to={'/'}>
+            <img
+              src='./logo.png'
+              alt=''
+              className='w-40 md:w-60'
+            />
+          </Link>
           <div className='items-center gap-4 ml-auto font-medium capitalize md:flex'>
             {links.map((link, index) => (
               <div className='relative'>
