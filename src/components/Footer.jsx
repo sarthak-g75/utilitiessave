@@ -21,11 +21,11 @@ const Footer = () => {
             </div>
             <div className='flex flex-col justify-start gap-2 '>
               <img
-                className='max-w-[200px] md:max-w-xs'
+                className='max-w-[150px] md:max-w-[200px]'
                 src='./Ombudsman.webp'
                 alt=''
               />
-              <span className='text-lg tracking-widest text-center text-black opacity-75'>
+              <span className='text-base tracking-widest text-center text-black opacity-75'>
                 ADR Scheme Member
               </span>
             </div>
@@ -40,7 +40,7 @@ const Footer = () => {
                     to={'/complaints-procedure'}
                   >
                     <FiChevronRight className='text-xl transition-all text-primaryGreen group-hover:translate-x-1' />{' '}
-                    Complaints Procedure
+                    Complaint
                   </Link>
                 </li>
               </ul>
