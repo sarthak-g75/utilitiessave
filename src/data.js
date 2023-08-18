@@ -71,8 +71,7 @@ export const pages = [
             services
           </p>
         ),
-        image:
-          'https://utilitiessave.com/wp-content/uploads/2020/07/about-us-utitlitiessave.png',
+        image: './aboutUs.png',
       },
     ],
   },

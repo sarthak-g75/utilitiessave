@@ -51,7 +51,7 @@ const SiblingPage = ({ title, data, banner }) => {
               initial={{ opacity: 0, x: index % 2 === 0 ? 100 : -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.7 * index + 1 }}
-              className='object-cover w-full max-h-72 border rounded-xl flex-[0.5] '
+              className='object-cover max-w-[500px] max-h-72 border rounded-xl flex-[0.5] '
               src={d.image}
               alt=''
             />
