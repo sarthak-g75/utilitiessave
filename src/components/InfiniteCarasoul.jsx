@@ -2,24 +2,27 @@ import React from 'react'
 import './Carasoul.css'
 const InfiniteCarasoul = () => {
   const images = [
-    './suppliers/british-gas.jpg',
+    './suppliers/britishEnergy.png',
     './suppliers/crown-gas-power.jpg',
     './suppliers/d-energy.jpg',
     './suppliers/dong-energy.jpg',
-    './suppliers/edf.jpg',
-    './suppliers/eon.jpg',
-    './suppliers/haven-power.jpg',
+    './suppliers/edf.png',
+    './suppliers/eon.png',
+    './suppliers/HavenPower.png',
     './suppliers/opus-energy.jpg',
     './suppliers/rgent-gas.jpg',
     './suppliers/schotti-power.jpg',
     './suppliers/Smartest.png',
-    './suppliers/sse.jpg',
-    './suppliers/total.jpg',
+    './suppliers/sse.png',
+    './suppliers/total.png',
     './suppliers/utilitiessave-01.jpg',
-    './suppliers/utilitiessave-02.jpg',
+    './suppliers/Corona.png',
     './suppliers/utilitiessave-03.jpg',
-    './suppliers/ygp-power.jpg',
+    './suppliers/YPG.png',
     './suppliers/Yu-energy.jpg',
+    './suppliers/Hudson-Energy.jpg',
+    './suppliers/CNG.png',
+    './suppliers/Gazporm.png',
   ]
   const imgs = images.map((img, index) => (
     <img

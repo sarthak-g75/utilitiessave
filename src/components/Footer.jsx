@@ -114,7 +114,7 @@ const Footer = () => {
                   <b>Email: </b>info@utilitiessave.com
                 </li>
                 <li>
-                  <b>Phone: </b> 0207 1112 9116
+                  <b>Phone: </b> 0207 112 9116
                 </li>
               </ul>
             </div>
